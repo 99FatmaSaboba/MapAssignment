@@ -1,0 +1,26 @@
+﻿<html>
+<head>
+    <title>Places Search Box</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <link href="css/StyleSheet.css" rel="stylesheet" />
+    <link rel="stylesheet" type="StyleSheet/css" href="./style.css" />
+    <script src="js/JavaScript.js"></script>
+    <script type="module" src="./JavaScript.js"></script>
+</head>
+<body>
+    <input id="pac-input"
+           class="controls"
+           type="text"
+           placeholder="Search Box" />
+    <div id="map"></div>
+
+    <!--
+     The `defer` attribute causes the callback to execute after the full HTML
+     document has been parsed. For non-blocking uses, avoiding race conditions,
+     and consistent behavior across browsers, consider loading using Promises
+     with https://www.npmjs.com/package/@googlemaps/js-api-loader.
+    -->
+    <script src="https://maps.googleapis.com/maps/api/js?6ed5c24f21e8c1da473f07ae1636dea7&callback=initAutocomplete&libraries=places&v=weekly"
+            ></script>
+</body>
+</html>
